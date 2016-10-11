@@ -1,1 +1,4 @@
 baseurl: /kamyang
+TimeZone: Asia/Shanghai
+kramdown:
+  input: GFM
