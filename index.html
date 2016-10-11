@@ -5,7 +5,6 @@ title: 我的Blog
 <h2>{{ page.title }}</h2>
 <p>最新文章</p>
 <ul>
-    {% assign pagetime = page.date | date_to_xmlschema %}
     {% for post in site.posts %}
     <li> {{ "01234" | slice: 0, 3 }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
