@@ -4,16 +4,18 @@ title: 我的Blog
 ---
 <div class=" thumbnail">
     <div class="row">
-        <article class="pull-left col-lg-9">
-            {% for post in site.posts %}
-            <h3 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
-                <small>{{ post.date | date: "%F" | replace: '-', '.' }}</small>
-            </h3>
-            <div>
-                {{ post.excerpt }}
-            </div>
-            {% endfor %}
-        </article>
+        <div class="pull-left col-lg-9">
+            <article>
+                {% for post in site.posts %}
+                <h3 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
+                    <small>{{ post.date | date: "%F" | replace: '-', '.' }}</small>
+                </h3>
+                <div>
+                    {{ post.excerpt }}<!--显示摘要-->
+                </div>
+                {% endfor %}
+            </article>
+        </div>
         <div class="col-lg-3">
             <h3>分类目录</h3>
 
