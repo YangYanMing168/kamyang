@@ -16,8 +16,8 @@ a {
     text-decoration: none;
 }
 
-article {
-    padding: 0px 10px 0px 15px;
+.wrapper {
+    padding: 0px 15px 15px 15px;
 }
 
 article > .title a:hover {
