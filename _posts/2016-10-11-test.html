@@ -4,4 +4,4 @@ title: 就做个测试
 ---
 <h2>{{ page.title }}</h2>
 <p>测试</p>
-<p>{{ page.date | date_to_xmlschema | slice: 0,10 }}</p>
+<p>{{ page.date | date_to_xmlschema | slice: 0,10 | replace: '-', '.' }}</p>
