@@ -3,3 +3,4 @@ TimeZone: Asia/Shanghai
 encoding: UTF-8
 kramdown:
   input: GFM
+excerpt_separator: <!--excerpt-->
