@@ -7,7 +7,7 @@ title: 我的Blog
 <ul>
     {% assign words = page.date | date_to_xmlschema %}
     {% for post in site.posts %}
-    <li> {{ words | slice: 0, 4 }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    <li> {{ words }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
 </ul>
