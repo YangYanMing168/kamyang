@@ -6,7 +6,7 @@ title: 我的Blog
 <p>最新文章</p>
 <ul>
     {% for post in site.posts %}
-    <li> {{ page.date | date_to_xmlschema }}<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    <li> {{ post.date | date_to_xmlschema }}<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
 </ul>
