@@ -7,7 +7,7 @@ title: 我的Blog
 <ul>
     {% assign pagetime = page.date | date_to_xmlschema %}
     {% for post in site.posts %}
-    <li> {{ pagetime | slice: 0, 9}} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    <li> {{ pagetime }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
 </ul>
