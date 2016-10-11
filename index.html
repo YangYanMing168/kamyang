@@ -6,7 +6,7 @@ title: 我的Blog
 <p>最新文章</p>
 <ul>
     {% for post in site.posts %}
-    <li> {{ "01234" | slice: 0, 3 }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    <li> {{ "01234_5678" | split: '_' | slice: 0, 3 }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
 </ul>
