@@ -1,3 +1,38 @@
 body {
     padding-top: 70px;
 }
+
+h3 {
+    color: #00b300;
+    line-height: 1.8;
+    font-size: 26px;
+    text-shadow: 0 1px 0px #fff, 0 1px 1px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px dashed #00b300;
+    position: relative;
+}
+
+a {
+    color: #00b300;
+    text-decoration: none;
+}
+
+article > .title a:hover {
+    color: #009000;
+    text-decoration: none;
+}
+
+article > .title a:visited {
+    text-decoration: none;
+}
+
+article > .title:after {
+    content: " ";
+    position: absolute;
+    left: -14px;
+    display: inline-block;
+    width: 10px;
+    height: 50px;
+    background-color: rgba(0, 179, 0, 0.66667);
+    border-radius: 4px 0 0 4px;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.33333);
+}
