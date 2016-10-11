@@ -5,9 +5,9 @@ title: 我的Blog
 <h2>{{ page.title }}</h2>
 <p>最新文章</p>
 <ul>
-    {% assign words = "01234 5678" | split: ' ' %}
+    {% assign words = page.date | date_to_xmlschema %}
     {% for post in site.posts %}
-    <li> {{ words[0] | slice: 0, 3 }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    <li> {{ words | slice: 0, 4 }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
 </ul>
