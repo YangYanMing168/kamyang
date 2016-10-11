@@ -7,7 +7,7 @@ title: 我的Blog
         <article class="pull-left col-lg-9">
             {% for post in site.posts %}
             <h3 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
-                <small>{{ post.date | date_to_xmlschema | slice: 0,10 | replace: '-', '.' }}</small>
+                <small>{{ post.date | date: "%F" | replace: '-', '.' }}</small>
             </h3>
             <div>
                 {{ post.excerpt }}
