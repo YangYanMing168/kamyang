@@ -1,0 +1,17 @@
+<h3>分类目录</h3>
+<ul class="category">
+    {% for category in site.categories %}
+    <li><a href="{{site.baseurl}}/categories.html#{{ category | first }}">{{ category | first }}</a></li>
+    {% endfor %}
+</ul>
+
+
+<!--<h3>分类目录</h3>-->
+<!--{% for category in site.categories %}-->
+<!--<h2>{{ category | first }}</h2> </span>{{ category | last | size }}</span>-->
+<!--<ul class="arc-list">-->
+<!--{% for post in category.last %}-->
+<!--<li>{{ post.date | date:"%Y.%m.%d"}}<a href="{{ post.url }}">{{ post.title }}</a></li>-->
+<!--{% endfor %}-->
+<!--</ul>-->
+<!--{% endfor %}-->
