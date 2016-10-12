@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6, strong {
     text-shadow: 0 1px 0px #fff, 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-a {
+article > .title a {
     color: #00b300;
     text-decoration: none;
 }
@@ -33,10 +33,13 @@ a {
 
 article > .title a:hover {
     color: #009000;
+}
+
+a:hover {
     text-decoration: none;
 }
 
-article > .title a:visited {
+a:visited {
     text-decoration: none;
 }
 
